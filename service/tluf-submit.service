@@ -1,0 +1,14 @@
+[Unit]
+Description=tluf.org paper submission receiver (POST /api/submit, GET /api/health)
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/wbic16/tluf-submit/tluf-submit.py
+WorkingDirectory=/home/wbic16/tluf-submit
+Environment=TLUF_SUBMIT_PORT=8643
+Environment=TLUF_SUBMIT_DIR=/home/wbic16/tluf-submissions
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target

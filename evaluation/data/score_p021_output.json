@@ -1,0 +1,100 @@
+{
+ "paper": "021",
+ "sample": "2 of 12",
+ "stratum": "cron (1 of 5)",
+ "cluster_filed": "Z founded",
+ "concepts_before": 259,
+ "sealed": {
+  "ni": 0.0263,
+  "ni_interval_80": [
+   0.015,
+   0.037
+  ],
+  "new": 7,
+  "new_interval_80": [
+   4,
+   10
+  ],
+  "revised": 0,
+  "axis_prob": 0.15,
+  "links_internal": 8,
+  "links_cross": 4
+ },
+ "headline": {
+  "actual_ni": 0.0372,
+  "ni_abs_error": 0.0109,
+  "ni_interval_covered": false,
+  "new_signed_error": 3,
+  "new_abs_error": 3,
+  "new_interval_covered": true,
+  "revised_hit": true,
+  "axis_brier": 0.0225,
+  "links_in_error": 7,
+  "links_cross_error": 0
+ },
+ "sensitivity_fold": {
+  "actual_ni": 0.0336,
+  "ni_abs_error": 0.0073,
+  "ni_interval_covered": true,
+  "new_signed_error": 2,
+  "new_abs_error": 2,
+  "new_interval_covered": true,
+  "revised_hit": true,
+  "axis_brier": 0.0225,
+  "links_in_error": 6,
+  "links_cross_error": 0
+ },
+ "sensitivity_split_note": {
+  "actual_ni": 0.0407,
+  "ni_abs_error": 0.0144,
+  "ni_interval_covered": false,
+  "new_signed_error": 4,
+  "new_abs_error": 4,
+  "new_interval_covered": false
+ },
+ "nulls": {
+  "N1": {
+   "ni": 0.05,
+   "ni_abs_error": 0.0128,
+   "new": 13.63,
+   "new_abs_error": 3.6316,
+   "axis_p": 0.05,
+   "axis_brier": 0.0025
+  },
+  "N2": {
+   "ni": 0.0627,
+   "ni_abs_error": 0.0256,
+   "new": 10.0,
+   "new_abs_error": 0.0,
+   "axis_p": 0.3077,
+   "axis_brier": 0.0947,
+   "basis": "expanding mean of past actuals (Papers 008-020) computed from the log; the protocol's declared seeds (NI 0.064, count 9.8) are this mean's value over Papers 008-019 at the sample's opening"
+  },
+  "N3": {
+   "ni": 0.0627,
+   "new": 10.0,
+   "src": "fallback-global: no scored past paper sits in cluster Z (founded by this paper), so the global expanding mean stands",
+   "basis": "expanding mean of past actuals computed from the log",
+   "ni_abs_error": 0.0256,
+   "new_abs_error": 0.0,
+   "axis_p": 0.3077,
+   "axis_brier": 0.0947
+  }
+ },
+ "seed_check": {
+  "expanding_mean_ni_p008_p020": 0.0627,
+  "expanding_mean_count_p008_p020": 10.0,
+  "past_axis_openings": "4 of 13"
+ },
+ "rolling10_abs_ni_error_after_p021": 0.018,
+ "ledger_bookkeeping": {
+  "prior": 100,
+  "band_step_on_actuals": 10,
+  "after": 100,
+  "range": [
+   90,
+   100
+  ],
+  "note": "LEDGER BOOKKEEPING ONLY under the ratified protocol: the band rule applied to the filed actuals; the Oracle enters no score and no criterion."
+ }
+}
